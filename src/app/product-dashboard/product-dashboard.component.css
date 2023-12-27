@@ -1,0 +1,126 @@
+.dashboard-container {
+  display: flex;
+
+  .side-nav {
+    width: 20%;
+    padding-top: 18px;
+    padding-left: 15px;
+    padding-right: 14px;
+    border-right: 1px solid whitesmoke;
+
+    .label {
+      color: #000000;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .tp-radio-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .example-section {
+      margin: 14px 0px;
+    }
+
+    .price-container {
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+
+
+    }
+  }
+
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0px 20px;
+    background-color: whitesmoke;
+
+    .header-container {
+      margin-left: 16px;
+
+      .title {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        font-size: 16px;
+      }
+
+      .subtitle {
+        margin: 0px;
+        font-size: 10px;
+        color: #787878;
+      }
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .col {
+      float: left;
+      margin: 16px 14px;
+
+    }
+
+    /* Stops the float property from affecting content after the columns */
+    .col:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .product-card {
+      cursor: pointer;
+      height: 280px;
+      width: 268px;
+    }
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard-container {
+    overflow-x: hidden;
+
+    .side-nav {
+      width: 57% !important;
+      padding: 15px !important;
+
+      .price-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .product-list {
+      
+      width: 100%;
+      padding: 0px !important;
+
+      .col {
+        width: 85% !important;
+
+        .product-card {
+          height: auto !important;
+          width: 100% !important;
+
+
+        }
+      }
+
+
+    }
+
+    
+  }
+
+  ::ng-deep .mat-mdc-paginator-range-actions {
+    flex-wrap: wrap;
+  }
+}

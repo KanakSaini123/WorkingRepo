@@ -1,0 +1,32 @@
+
+
+<html>
+
+<div class="header">
+  <nav class="navbar">
+    <a routerLink="/dashboard">ECommerce.de</a>
+    <span class="cart-content">
+      <mat-icon matTooltip="Proceed to checkout" class="cart-icon" (click)="onCheckout()">shopping_cart</mat-icon>
+      <span class='badge badge-warning' id='lblCartCount'>
+        {{this.cartLength}} </span>
+    </span>
+
+  </nav>
+</div>
+<div id="content" style="position:absolute; top:50px; bottom:80px; left:0px; right:0px; overflow:auto;">
+  <router-outlet></router-outlet>
+</div>
+<div class="footer">
+  Conditions of Use & Sale
+  Privacy Notice
+  Interest-Based Ads <br>
+  <div class="info-section">
+    <a class ="link-item"
+    href="_blank">&#9679; Privacy Notice</a>
+    <a class ="link-item"
+    href="_blank">&#9679; Legal Notice</a>
+  </div>
+
+</div>
+
+</html>

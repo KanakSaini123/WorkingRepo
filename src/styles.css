@@ -1,0 +1,130 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+
+.main-container {
+    margin: 0px !important;
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 10px;
+}
+
+html,
+body {
+    min-height: 100%;
+
+    .error-container {
+        font-weight: 700;
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 22px;
+    }
+}
+
+.mat-button {
+    background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%);
+    color: white;
+    cursor: pointer;
+}
+
+:disabled {
+    background: #A9A9A9;
+}
+
+mat-icon {
+    cursor: pointer;
+}
+
+.form-control {
+    height: 30px;
+    margin:10px;
+    width:50% !important;
+}
+
+
+.mat-mdc-snack-bar-container .mdc-snackbar__surface {
+    background-color:
+        #00b200 !important;
+}
+
+.mat-mdc-paginator-range-label {
+    margin:0px !important;
+}
+
+
+::ng-deep .mat-mdc-snack-bar-container {
+    .success {
+        color: white;
+        --mdc-snackbar-container-color: #2196f3;
+        --mat-mdc-snack-bar-button-color: #fff;
+        --mdc-snackbar-supporting-text-color: #fff;
+
+    }
+}
+
+::ng-deep .mdc-radio:hover {
+    border-color: #3f51b5 !important;
+}
+
+.mat-mdc-radio-button .mdc-radio .mdc-radio__native-control:enabled:checked+.mdc-radio__background {
+    .mdc-radio__outer-circle {
+        border-color: #3f51b5 !important;
+    }
+
+    .mdc-radio__inner-circle {
+        border-color: #3f51b5;
+    }
+}
+
+.mat-mdc-card-header {
+    justify-content: center;
+}
+
+.mat-mdc-paginator-container {
+    border: 1px solid lightgrey;
+
+    .mat-mdc-paginator-outer-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-button {
+    background: #ccc
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #888
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eee
+}
+
+​ .ngx-slider {
+    width: 77%;
+    margin: 35px 8px 20px;
+}
+
+
+.ngx-slider .ngx-slider-pointer {
+    background-color: #3f51b5 !important;
+}
+
+.ngx-slider .ngx-slider-bubble {
+    font-size: 13px;
+}

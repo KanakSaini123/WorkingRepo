@@ -1,0 +1,36 @@
+.products-detail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+
+    .label {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .products-description {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.mat-button {
+    margin-top: 10px;
+}
+
+.title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    margin-left: 18px;
+}
+
+.product-section {
+    display: flex !important;
+
+    align-items: center;
+    justify-content: space-between;
+
+}

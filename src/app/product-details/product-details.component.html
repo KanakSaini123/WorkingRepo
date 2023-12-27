@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col">
+
+    <div class="gallery">
+      <a target="_blank" href="img_forest.jpg">
+        <img src="{{productDetails?.thumbnail}}" alt="Forest" height="100%" width="100%">
+      </a>
+
+    </div>
+  </div>
+
+  <div class="col">
+
+    <h1 class="title">Product Details</h1>
+    <p class="subtitle">{{productDetails?.title}}</p>
+    <p class="description">{{productDetails?.description}}</p>
+    <p class="description"> <b>Brand:</b> {{productDetails?.brand}}</p>
+    <p> <b>Rating:</b> {{productDetails?.rating}}</p>
+    <button class="mat-button" mat-fab extended (click)="openSnackBar('success')">
+      Add to Cart
+    </button>
+  </div>
+</div>

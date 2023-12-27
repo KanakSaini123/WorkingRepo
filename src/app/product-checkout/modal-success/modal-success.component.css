@@ -1,0 +1,24 @@
+.modal-title {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .mat-success {
+        height: 50px;
+        width: 60px;
+        font-size: 30px;
+        color: green;
+        font-size: 24px;
+    }
+}
+
+::ng-deep .mdc-dialog__container {
+    min-width: 300px !important;
+    min-height: 250px !important;
+}

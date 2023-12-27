@@ -1,0 +1,47 @@
+<div class="cart-container" *ngIf="cartProductDetails.length>0 ;else other_content">
+
+  <mat-card class="result">
+    <mat-card-content>
+      <h2 class="title">Result</h2>
+
+      <section class="product-section" *ngFor="let item of cartProductDetails">
+        <mat-checkbox (click)="onClickCheckbox(item)" class="example-margin" [(indeterminate)]="indeterminate"
+          [disabled]="disabled">
+          <div class="products-detail">
+
+            <img mat-card-image src="{{item.thumbnail}}" alt="Photo of a s" width="170px" height="170px">
+            <div class="products-description">
+              <p class="label">{{item.title}} </p> <br>
+              <p> price:{{item.price}}</p> <br>
+
+              <p> quantity : {{item.quantity + 1}}</p>
+            </div>
+          </div>
+        </mat-checkbox>
+
+        <div class="delete-container"> <mat-icon matTooltip="Delete from Cart"
+            (click)="removeFromCart(item)">delete</mat-icon></div>
+      </section>
+    </mat-card-content>
+  </mat-card>
+  <div>
+    <p class="title">Sub total: ${{this.totalCartValue }}</p>
+  </div>
+  <button class="mat-button" mat-fab extended [disabled]="disabledButton" (click)="onClickBuy()">
+    Confirm to Buy
+  </button>
+</div>
+
+
+
+
+<ng-template #other_content>
+
+  <div class="error-container">
+    Opps Nothing in the cart !!!!! <br>
+    <button class="mat-button" mat-fab extended (click)="onClickContinue()">
+      Continue Shopping
+    </button>
+  </div>
+
+</ng-template>
